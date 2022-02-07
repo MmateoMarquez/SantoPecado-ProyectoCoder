@@ -1,0 +1,436 @@
+/*------reset css-------*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+p a, .sucursales {
+  color: #f4f3ee;
+  font-family: "montserrat";
+  margin-left: 1%;
+  text-align: center; }
+
+p a:hover, #cardHome .container .cardFlyer a:hover, body #nav2 ul li a:hover, body footer .containerFooter #foot a:hover, body footer .containerFooter #redes a:hover {
+  color: #ffc800;
+  text-decoration: underline;
+  background-color: #463f3a;
+  transform: scale(1.2, 1.2); }
+
+.textCarousel {
+  background-color: rgba(79, 72, 49, 0.6); }
+
+.carouselP {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  padding-top: 0%;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "abrilfatface";
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.linkCarousel:hover {
+  color: rgb(255, 255, 255);
+  background: none;
+  text-decoration: underline; }
+
+p a:hover {
+  padding: 2%; }
+
+.textoInicial {
+  margin-top: 10%;
+  padding: 2%;
+  margin-bottom: 0%;
+  background-image: url("../img/fondofrase.jpg");
+  height: 40vw;
+  background-repeat: no-repeat;
+  font-size: 2vw; }
+
+.italica {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-top: 5%;
+  color: #f4f3ee;
+  text-transform: none;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  width: 100%;
+  background: none; }
+  .italica em {
+    text-shadow: 2px 2px 5px; }
+
+#cardHome {
+  text-align: center; }
+  #cardHome .container {
+    padding-top: 2vw;
+    padding-bottom: 5vw; }
+    #cardHome .container .cardFlyer {
+      border-radius: 5px;
+      width: 100%;
+      background: #f4f3ee;
+      margin-top: 50px;
+      transition: all 0.2s ease-in;
+      box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.8); }
+      #cardHome .container .cardFlyer img {
+        width: 100%; }
+      #cardHome .container .cardFlyer p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: black; }
+      #cardHome .container .cardFlyer a {
+        color: #463f3a;
+        font-size: 0.8rem;
+        font-family: "montserrat";
+        text-decoration: none;
+        padding: 1vh;
+        text-transform: uppercase;
+        background-color: #8a8883; }
+      #cardHome .container .cardFlyer .imageBox {
+        overflow: hidden;
+        box-shadow: 0px 2px 15px rgba(79, 72, 49, 0.6);
+        border-radius: 5px; }
+        #cardHome .container .cardFlyer .imageBox .img {
+          width: 100%;
+          height: 300px; }
+      #cardHome .container .cardFlyer .textContainer {
+        padding: 30px 18px;
+        text-align: center; }
+  #cardHome .cardFlyer:hover {
+    background: #fff;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease-in;
+    margin-top: 50px; }
+    #cardHome .cardFlyer:hover .imageBox img {
+      opacity: 0.7;
+      transform: scale(1.15); }
+
+.intro h2 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  padding-top: 5%;
+  color: #8a8883;
+  text-transform: uppercase;
+  font-family: "montserrat";
+  text-align: center;
+  text-shadow: 2px 2px 3px; }
+
+.containerCafes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4vw;
+  padding: 5vw;
+  justify-content: space-around;
+  align-items: center; }
+  .containerCafes .flipCard {
+    background-color: transparent;
+    width: 30%;
+    height: 26vw;
+    perspective: 1000px;
+    margin: 4vw 1vw; }
+    .containerCafes .flipCard .flipCardInner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 8px 6px 10px rgba(0, 0, 0, 0.5); }
+      .containerCafes .flipCard .flipCardInner .flipCardFront, .containerCafes .flipCard .flipCardInner .flipCardBack {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden; }
+      .containerCafes .flipCard .flipCardInner .flipCardFront {
+        background-color: black;
+        color: white; }
+        .containerCafes .flipCard .flipCardInner .flipCardFront h3 {
+          font-size: 1.8vw;
+          font-family: "montserrat";
+          letter-spacing: 1vw; }
+      .containerCafes .flipCard .flipCardInner .flipCardBack {
+        background-color: black;
+        color: #8a8883;
+        transform: rotateY(180deg);
+        text-align: center;
+        padding: 2vw 1vw; }
+        .containerCafes .flipCard .flipCardInner .flipCardBack p {
+          font-size: 2vw;
+          font-weight: light;
+          padding-top: 0.5vw;
+          color: #f4f3ee;
+          text-transform: none; }
+
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg); }
+
+@media screen and (max-width: 768px) {
+  .flipCard {
+    min-width: 40%;
+    min-height: 35vw;
+    padding: 1vw; }
+  .flipCard:hover .flipCardInner {
+    transform: rotateY(180deg) scale(1.45); } }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8px 8px 8px; }
+  .row .column {
+    flex: 25%;
+    max-width: 33%;
+    padding: 0 8px;
+    margin: 1%; }
+    .row .column img {
+      margin-top: 0.5rem;
+      vertical-align: middle;
+      width: 100%; }
+
+@media screen and (max-width: 768px) {
+  .column:hover {
+    overflow: hidden; }
+    .column:hover img:hover {
+      transform: scale(1.8); } }
+
+p a, .sucursales {
+  color: #f4f3ee;
+  font-family: "montserrat";
+  margin-left: 1%;
+  text-align: center; }
+
+.local1, .local2 {
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+#dondeEstamos {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding-top: 1.2rem;
+  color: #f4f3ee;
+  text-transform: none;
+  font-style: italic; }
+
+.sucursales {
+  margin-bottom: 1rem;
+  height: 300px; }
+
+.local1 {
+  background-image: url("../img/fotolocal1.jpg"); }
+
+.local2 {
+  background-image: url("../img/fotolocal2.jpg"); }
+
+@media screen and (max-width: 576px) {
+  #dondeEstamos {
+    color: #463f3a;
+    font-weight: bold; } }
+
+.info {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 140px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: noise-3 1s linear infinite; }
+
+@keyframes noise-1 {
+  0%, 20%, 40%, 60%, 70%, 90% {
+    opacity: 0; }
+  10% {
+    opacity: .1; }
+  50% {
+    opacity: .5;
+    left: -6px; }
+  80% {
+    opacity: .3; }
+  100% {
+    opacity: .6;
+    left: 2px; } }
+
+@keyframes noise-2 {
+  0%, 20%, 40%, 60%, 70%, 90% {
+    opacity: 0; }
+  10% {
+    opacity: .1; }
+  50% {
+    opacity: .5;
+    left: 6px; }
+  80% {
+    opacity: .3; }
+  100% {
+    opacity: .6;
+    left: -2px; } }
+
+@keyframes noise {
+  0%, 3%, 5%, 42%, 44%, 100% {
+    opacity: 1;
+    transform: scaleY(1); }
+  4.3% {
+    opacity: 1;
+    transform: scaleY(1.7); }
+  43% {
+    opacity: 1;
+    transform: scaleX(1.5); } }
+
+@keyframes noise-3 {
+  0%, 3%, 5%, 42%, 44%, 100% {
+    opacity: 1;
+    transform: scaleY(1); }
+  4.3% {
+    opacity: 1;
+    transform: scaleY(4); }
+  43% {
+    opacity: 1;
+    transform: scaleX(10) rotate(60deg); } }
+
+p a, .sucursales {
+  color: #f4f3ee;
+  font-family: "montserrat";
+  margin-left: 1%;
+  text-align: center; }
+
+p a:hover, #cardHome .container .cardFlyer a:hover, body #nav2 ul li a:hover, body footer .containerFooter #foot a:hover, body footer .containerFooter #redes a:hover {
+  color: #ffc800;
+  text-decoration: underline;
+  background-color: #463f3a;
+  transform: scale(1.2, 1.2); }
+
+.local1, .local2 {
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+body {
+  background: linear-gradient(black 0%, #FF0000 10%, #F32D2D 40%, #F05C5C 60%, #F7D5D5 85%, #F32C2C 100%);
+  font-family: "montserrat alternates"; }
+  body header {
+    margin-top: 5%;}
+    
+    body header .imgcentrada {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      animation-name: animado;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 3s;
+      animation-delay: 0s; }
+
+      .sucursaleslocal{color:#463f3a;(!important)}
+
+@keyframes animado {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0.2; }
+  40% {
+    opacity: 0.4; }
+  60% {
+    opacity: 0.6; }
+  80% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+  body #nav2 ul {
+    margin-top: 0px;
+    background-color: black; }
+    body #nav2 ul li {
+      margin: 0.3rem; }
+      body #nav2 ul li a {
+        font-size: 0.8rem;
+        font-weight: light;
+        padding-top: 0.2rem;
+        color: #f4f3ee;
+        text-transform: uppercase;
+        font-family: "montserrat";
+        text-decoration: none;
+        padding-right: 1.6rem;
+        padding-left: 1.6rem; }
+  body main h1 {
+    font-size: 1.6rem;
+    font-weight: none;
+    padding-top: 0.5%;
+    color: #ffc800;
+    text-transform: uppercase;
+    word-spacing: 0.8rem;
+    margin: 0.8rem;
+    animation-name: animado;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 0s; }
+
+@keyframes animado {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0.2; }
+  40% {
+    opacity: 0.4; }
+  60% {
+    opacity: 0.6; }
+  80% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+  body footer {
+    background-color: black;
+    text-align: center;
+    color: #8a8883; }
+    body footer #vapor {
+      font-size: 1.5rem;
+      padding-top: 1%;
+      margin-bottom: 1%;
+      color: #ffc800; }
+    body footer .containerFooter {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr; }
+      body footer .containerFooter h3 strong {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: "montserrat alternates"; }
+      body footer .containerFooter #foot {
+        list-style-type: none;
+        margin-bottom: 0px; }
+        body footer .containerFooter #foot a {
+          text-decoration: none;
+          margin-left: -3em;
+          color: #8a8883;
+          font-size: 0.7rem; }
+      body footer .containerFooter #redes a {
+        color: #8a8883; }
+      body footer .containerFooter #redes a:hover {
+        background-color: transparent; }
+    body footer .pie {
+      text-align: right;
+      margin-bottom: 0px; }
+
+@media screen and (max-width: 576px) {
+  .containerFooter {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat 2, 1fr; }
+  .container .textoInicial {
+    font-size: 12px;
+    height: 80vw;
+    padding-right: 3%; } }
+
+@media screen and (max-width: 768px) {
+  #nav2 a {
+    text-align: center; }
+  .pie {
+    font-size: 10px; } }
